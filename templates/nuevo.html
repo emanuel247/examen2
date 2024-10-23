@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nuevo</title>
+    <style>
+        h1 {
+            color: #2d2d93; /* Tono celeste */
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Ingrese Nuevo producto </h1>
+    <form action="{{url_for('nuevo')}}" method="POST">
+        Nombre: <input type="text" name="nombre" required><br><br>
+        Cantidad: <input type="text" name="cantidad" required><br><br>
+        Precio: <input type="text" name="precio" required><br><br>
+        Fecha de vencimiento: <input type="date" name="fecha" required><br><br>
+        Categoria: <input type="text" name="categoria" required><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
